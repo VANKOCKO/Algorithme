@@ -1,6 +1,3 @@
-
- 
- 
 /**
   * Function :
   * @param n integer

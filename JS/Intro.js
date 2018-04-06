@@ -29,5 +29,19 @@ function permuter(tab, i,j){
     console.log(tab);        
  }
 
- tab = [1,2,3,4,5,8];
+ tab = [10,2,9,4,5,8];
+ 
  permuter(tab,1,2);
+
+
+ /**
+  * trie a bulle
+  * 
+  */
+  for(var k =1; k<tab.length;k++){
+
+        if(tab[k-1]>tab[k]){
+            permuter(tab,k-1,k);
+        }
+  }
+

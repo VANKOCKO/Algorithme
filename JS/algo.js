@@ -5,7 +5,7 @@
   * Function :
   * @param n integer
   */
- 
+
 function factoriel(n){
            
         var i = 0;
@@ -13,13 +13,11 @@ function factoriel(n){
         while(i<n){
             i=i+1;
             fact=fact*i;
-            console.log(n+"!="+fact);
-        
+            console.log(n+"!="+fact);        
 }
 
  }
 
- 
 factoriel(4);
 
 /**
@@ -28,6 +26,6 @@ factoriel(4);
 
 function permuter(tab, i,j){
         
-
+    
         
  }

@@ -138,26 +138,81 @@ FeuxDeRoute();
  */
 
 
+ 
 
  function EquationDuSecondegre(a,b,c)
  {           
-              var delta,racine1,racine2;
-              discri =(b*b) - (4*a*c);
-              
+              var racine,delta,racine1,racine2;
+              delta =(b*b) - (4*a*c);
+              if(delta == 0)
+              { 
+                racine  = -b/2*a
+                console.log( "delta = " + delta + " et  "+ "racine = "+ racine);
+              }
               if(delta>0)
               {  
                    if(b>0)
                    {
-                    racine1 = -b + sqrt(delta) / 2*a    
+                    racine1 = -b + sqrt(delta) / 2*a ;
+                    console.log("delta"+delta + " et  "+ +"racine1"+ racine1);
                    }
                    else{
-                    racine2  = -b - sqrt(delta) / 2*a
-                   }
+                    racine2  = -b - sqrt(delta) / 2*a ;
+                    console.log("delta"+delta + " et " + "racine2"+ racine2);
+                    }
               } 
-              else{
+              if(delta < 0)
+              {
                 console.log("delta ="+delta+"delta negatif racine complexe ");
               }
+            
  }
 
- EquationDuSecondegre(2,4,5);
+EquationDuSecondegre(2,3,4);
+
+
+
+
+                /**
+                 *    Exerice et correction 
+                 */
+
+
+  /**
+   * Exercice 1. 
+   * On possède un compte bancaire avec un solde positif. 
+   * On veut écrire un programme qui lit une opération représentée par un caractère,
+   * 'd' pour dépôt ou 'r' pour retrait, ainsi qu'un entier positif qui indique la somme à transférer.
+   *  Dans le cas d'un retrait, la somme à transférer devra être nécessairement inférieure au solde. 
+   * Si l'opération a pu aboutir, on écrit le nouveau solde.
+   **/
+
+   /**
+    *  Solution
+    */
+
+    soldActuel=1500;
+    function retrait(retrait)
+    {      
+           var retrait;
+           if(retrait > soldActuel)
+             {
+               console.log("retrait impossible");
+             }
+             else{
+                 soldActuel = soldActuel - retrait;
+                 console.log("r");
+                 console.log("solde : "+soldActuel);
+             }
+    }
+    function depot(depot){
+         soldActuel=soldActuel + depot;
+         console.log("d");
+         console.log("solde : "+soldActuel);
+    }
+   depot(200);
+   retrait(300);
+  
+   
+
 

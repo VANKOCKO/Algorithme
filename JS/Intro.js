@@ -1,5 +1,19 @@
+
+
 /**
-  * Function :
+ *      Auteur : van kocko 
+ *      Date: 06-04-2018  
+ */
+
+
+                /**
+                 *    Theorie 
+                 */
+
+/**
+ *  n! =1*(i+1)*............*n 
+  * Function : factoriel
+  * 
   * @param n integer
   */
 

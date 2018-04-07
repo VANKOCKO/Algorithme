@@ -10,10 +10,10 @@
                  */
 
 /**
- * Chapitre 5   Enonce composee et Enonce de choix 
+ * Chapitre :   Enonce composee et Enonce de choix 
  *   
  * 
- * 5.2.1 Enonce composee 
+ *  Enonce composee 
  * Structure algo
  * 
  *      debut E1,E2,E3
@@ -26,7 +26,7 @@
  *    alors 
  *    {P} debut {P1} E1 {Q1} {P2} E2 {Q2}.........{Pn} En {Qn} => Q 
  * 
- * 5.2.2 Enonce de choix 
+ * Enonce de choix 
  * 
  * Structure algo
  *  
@@ -53,7 +53,7 @@
  *            finchoix
  *     fin  
  * 
- *  5.2.2 Enonce de si
+ *  Enonce de si
  *  
  *  algo 
  *    
@@ -177,7 +177,6 @@ EquationDuSecondegre(2,3,4);
                  *    Exerice et correction 
                  */
 
-
   /**
    * Exercice 1. 
    * On possède un compte bancaire avec un solde positif. 
@@ -192,6 +191,7 @@ EquationDuSecondegre(2,3,4);
     */
 
     soldActuel=1500;
+
     function retrait(retrait)
     {      
            var retrait;

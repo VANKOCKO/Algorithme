@@ -26,3 +26,22 @@
  *    fin
  */
 
+function MoyTab()
+{
+        var tab = [1,2,3,4];
+        var somme=0;
+        var taille = tab.length;
+        var moy;
+        for(var i=0;i<=taille;i++)
+        {
+          somme=somme + tab[i];
+        }
+        moy=somme/taille;
+        return moy;
+ }
+ var ResMoy = MoyTab();
+ console.log("Moyenne :" + ResMoy);
+
+
+
+ 

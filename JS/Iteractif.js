@@ -53,6 +53,24 @@
                  */
 
 
+                 /**
+ *  n! =1*(i+1)*............*n 
+  * Function : factoriel
+  * 
+  * @param n integer
+  */
+
+function factoriel(n){
+           
+    var i = 0;
+    var fact=1;
+    while(i<n){
+        i=i+1;
+        fact=fact*i;    
+    }
+    return fact;
+}
+
      /**
       *  Exemple sur minimal et maximal
       *              
@@ -86,7 +104,7 @@
       *     {Consequent : a=Quotient * b + rest  avec rest>= 0 et rest<b }
       */  
 
-     function DivisionEntiere(a,b)
+     function Division(a,b)
      {
          var rest=a;
          var quotient=0;
@@ -101,7 +119,7 @@
 
      var a=4;
      var b=2;
-     var resultDiv= DivisionEntiere(a,b);
+     var resultDiv= Division(a,b);
      console.log(a+"/"+b+"="+resultDiv);
 
       /**
@@ -251,7 +269,7 @@
       }
      var ResulPuiss=puissance(2,3);
      console.log(ResulPuiss); 
-
+    
 
 
                   /**
@@ -259,4 +277,42 @@
                  */
 
 
-                 
+/**
+ *   Exercice 1 
+ * 
+ *  Sinus(x)=x - x^{3}/3! + x^{5}/5! - x^{7}/7! + .......... 
+ */
+
+ /**
+  *    appelant chaque fonction que nous avons cree 
+  */
+
+function sinus(x) 
+{
+    var n = 10;
+    var res=0;
+    while(n>0)
+    { 
+        for(var i=0;i<=n;i++)
+        {
+           res=res + multiplication(puissance(-1,i),puissance(x,2*i+1)) / factoriel(2*i+1);            
+        }
+        n=n-1;
+        return res;
+    }
+
+}
+var Ressinus = sinus(3);
+console.log(" sinus = " + Ressinus);
+
+                
+/**
+ *   Exericice 2 carre(n)
+ *   
+ *   n^2
+ * 
+ * Astuce : (n+1)^2=n^2+2*n+1 
+ * 
+ */
+
+ 
